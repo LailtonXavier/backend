@@ -7,7 +7,6 @@ const app = express();
 const mongoose = require('mongoose');
 mongoose.connect(process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => {
-  console.log('Conectei a base de dados');
   app.emit('pronto');
   // emitindo um sinal e pegando la embaixo
   // promisses

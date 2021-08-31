@@ -1,10 +1,18 @@
-### nossa pasta src = sera o back, vms criar uma pasta front
+### Mongodb e criar nossos primeiros model
 
-### middlewares
-  - o express é baseado todo em middlweares
+  # Para criar os model precisamos conectar na base de dados
+    - eles são dependevia do projeto
+    - instalando o Mongoose e criar alguns dados na base
+     de dados
 
-  - nosso segundo paramentro dos metodos (get) poderia ser uma função pra 
-    realizar alguma tarefa, uma função que chama outra.... 
+  # dotenv
+    - npm i dotenv
+    - esse pacote gerencia as senhas pra gente
+    ( envitar mandar pra todas as pessoas )
+    - ele vai criar variaveis de ambiente pra o pc  
 
-    - ordem no server.js
-      -> middlewares acima de routes pfvr.
+  # mongoose
+    - npm i 
+    - vai fazer as modelagem dos dados
+    - vai validar nossos dados
+    - ele vai fazer a conexao com db

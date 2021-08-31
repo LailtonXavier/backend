@@ -1,3 +1,18 @@
+// raramente vamos usar dessa maneira, mas funciona
+// isso tudo iria para Model dentro de uma classe
+
+// const HomeModel = require('../models/HomeModel');
+// busacar
+// HomeModel.find()
+// .then(dados => console.log(dados))
+// .catch(e => console.log(e));
+
+// HomeModel.create({
+//   titulo: 'Outra titulo de teste',
+//   descricao: 'Outra descricao de testes'
+// })
+// .then(dados => console.log(dados))
+// .catch(e => console.log(e))
 
 exports.pageInitial = (req, res) => {
   res.render('index');
