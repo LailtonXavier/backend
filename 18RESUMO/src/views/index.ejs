@@ -1,0 +1,29 @@
+<%- include('includes/head'); %>
+
+<div class="container">
+    <h1>
+      <!-- pegando a chave e colocando dessa forma  -->
+      <!-- <% if(typeof titulo !== 'undefined') { %>
+      <%= titulo %>
+      <% } else { %>
+        O titulo nao foi enviado
+        <% } %> -->
+
+        <!-- fazendom um for  -->
+      <!-- <% numeros.forEach( num => { %>
+        <%= num %> <br>
+        <% }); %> -->
+<!-- 
+        <%= titulo %>
+        <%= umValorLocal %> -->
+        <%= csrfToken %>
+    </h1>
+    <form action="/" method="POST">
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+      <label>Cliente</label>
+      <input type="text" name="cliente">
+      <button>Enviar</button>
+    </form>
+  </div>
+
+  <%- include('includes/footer'); %>
